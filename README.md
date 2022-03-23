@@ -1,1 +1,1 @@
-# HTML over DNS over HTML (aka. hodoh)
+# HTML over DNS over HTTPS (aka. hodoh)
